@@ -6,7 +6,7 @@ var config = {
   use3dTerrain: false, //set true for enabling 3D maps.
   // auto: false,
   footer:
-    'Source: <a target = "_blank" href = "https://missingmigrants.iom.int">Mapping Osun State Primary Health Centres</a> | Built with <a target = "_blank" href = "https://www.mapbox.com/">Mapbox</a><br>Design: <a target = "_blank" href = "https://github.com/Segundev/">Jayeola Gbenga</a> | Find the source code <a target = "_blank" href = "https://github.com/Segundev/digital-innovation-challenge">here</a><br>Inspired By: <a href="https://connorrothschild.com">Connor Rothschild</a>',
+    'Source: <a target = "_blank" href = "https://digitalnigeria.gov.ng/challenge/">Mapping Osun State Primary Health Centres</a> | Built with <a target = "_blank" href = "https://www.mapbox.com/">Mapbox</a><br>Design: <a target = "_blank" href = "https://github.com/Segundev/">Jayeola Gbenga</a> | Find the source code <a target = "_blank" href = "https://github.com/Segundev/digital-innovation-challenge">here</a><br>Inspired By: <a href="https://connorrothschild.com">Connor Rothschild</a>',
   chapters: [
     {
       id: "title-id",
@@ -251,6 +251,78 @@ var config = {
       ],
     },
     {
+      id: "chapter5b-id",
+      alignment: "left",
+      image: "assets/chart1.png",
+      description:
+        "In Osun State, the majority of births take place in healthcare facilities, with 54% of deliveries happening in public hospitals and 32.1% in private clinics. This is a positive sign, as most women are opting for professional care during childbirth. Home births are less common in Osun, at 12.3%, compared to states like Ondo and Ogun, where home deliveries are more frequent. However, the data still suggests a need for continuous efforts to ensure that more women choose healthcare facilities for delivery, reducing potential risks associated with home births. Overall, Osun is making progress in improving access to safer childbirth options, though there’s room to encourage even more hospital-based deliveries.",
+      location: {
+        center: [4.529, 7.796],
+        zoom: 11.8,
+        pitch: 10,
+        bearing: 0,
+      },
+      mapAnimation: "easeTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "Osogbo LGA Boundary",
+          opacity: 1,
+        },
+        {
+          layer: "Government Owned",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "Osogbo LGA Boundary",
+          opacity: 0,
+        },
+        {
+          layer: "Government Owned",
+          opacity: 0,
+        },
+      ],
+    },
+    {
+      id: "chapter5b-id",
+      alignment: "left",
+      image: "assets/chart1.png",
+      description:
+        "In Osun State, there are both promising signs and areas that need improvement when it comes to child health. While the neonatal mortality rate shows room for improvement, the state performs better in post-neonatal care, with fewer deaths compared to many other states.<br><br> However, infant and under-5 mortality rates remain a concern, with Osun facing higher numbers than neighboring Lagos and Oyo. These mixed results indicate that while some progress has been made, more efforts are needed to ensure that more children in Osun survive and thrive, especially in their critical early years.",
+      location: {
+        center: [4.529, 7.796],
+        zoom: 11.8,
+        pitch: 10,
+        bearing: 0,
+      },
+      mapAnimation: "easeTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "Osogbo LGA Boundary",
+          opacity: 1,
+        },
+        {
+          layer: "Government Owned",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "Osogbo LGA Boundary",
+          opacity: 0,
+        },
+        {
+          layer: "Government Owned",
+          opacity: 0,
+        },
+      ],
+    },
+    {
       id: "chapter6-id",
       alignment: "left",
       image: "assets/renovation.jpg",
@@ -277,6 +349,25 @@ var config = {
           opacity: 0,
         },
       ],
+    },
+    {
+      id: "chapter7-id",
+      title: "Data Source & References",
+      alignment: "left",
+      image: "assets/Adeleke.jpg",
+      description:
+        "<span style='color:darkgrey'>&#9679;</span> News Report Cited: <a href='https://checkmyphc.org/blog/phc-in-oyediran-village-aground-for-over-8-years-as-residents-bemoan'>PHC in Oyediran Village Remains Inoperative for 8 Years, Leaving Residents Frustrated</a><br><span style='color:darkgrey'>&#9679;</span> Primary Health Centre and Geospatial Data: <a href='https://grid3.org/geospatial-data-nigeria'>GRID3</a><br><span style='color:darkgrey'>&#9679;</span> Minimum PHC Staff Requirement: <a href='https://nphcda.gov.ng/'>NPHCDA </a>",
+      location: {
+        center: [4, 7.555],
+        zoom: 8,
+        pitch: 1,
+        bearing: 0,
+      },
+      mapAnimation: "easeTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
     },
   ],
 };
