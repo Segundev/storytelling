@@ -318,7 +318,7 @@ var config = {
       id: "chapter5-id",
       alignment: "left",
       title: "Osun thrives among its western pairs",
-      image: "assets/chart1.png",
+      image: "assets/chart2.jpg",
       description:
         "Most babies in Osun State are born in healthcare facilities, which is a good sign that more women are choosing professional care for childbirth. About 54% of deliveries happen in public hospitals and 32.1% in private clinics. Home births, which come with more risks, are less common here—only 12.3%—a much lower figure than in nearby states like Ondo and Ogun, where home deliveries are more frequent. <br><br> Despite this progress, there’s still work to be done to ensure even more women opt for hospital-based deliveries, reducing the risks that come with giving birth at home.",
       location: {
