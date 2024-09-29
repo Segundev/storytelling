@@ -155,7 +155,7 @@ var config = {
       alignment: "left",
       // image: "assets/chapter2.jpg",
       description:
-        "Each ward is expected to have a primary health care centre (PHC) <span>&#127973;</span> in accordance with the standards set by the National Primary Health Care Development Agency (NPHCDA). However, a major challenge facing Oyediran and its neighbouring communities is inadequate staffing <span>&#128104;</span> at their PHC.<br><br> <span style = 'color:#f6aa28;'>&#9679;</span> <span> Primary Health Centre </span>",
+        "In accordance with the standards set by the National Primary Health Care Development Agency (NPHCDA) each ward is expected to have a primary health care centre (PHC) <span>&#127973;</span>. However, a major challenge facing remote communities is inadequate staffing <span>&#128104;</span> at their PHC.<br><br> <span style = 'color:#f6aa28;'>&#9679;</span> <span> Primary Health Centre </span>",
       location: {
         center: [4.22, 7.65],
         zoom: 13.5,
@@ -183,7 +183,7 @@ var config = {
       ],
     },
     {
-      id: "chapter2-id",
+      id: "chapter2b-id",
       alignment: "left",
       image: "assets/chapter2.jpg",
       description:
@@ -279,7 +279,7 @@ var config = {
       ],
     },
     {
-      id: "chapter5-id",
+      id: "chapter4b-id",
       alignment: "left",
       // image: "../assets/chapter3.jpg",
       description:
@@ -315,11 +315,12 @@ var config = {
       ],
     },
     {
-      id: "chapter5b-id",
+      id: "chapter5-id",
       alignment: "left",
+      title: "Osun thrives among its western pairs",
       image: "assets/chart1.png",
       description:
-        "In Osun State, the majority of births take place in healthcare facilities, with 54% of deliveries happening in public hospitals and 32.1% in private clinics. This is a positive sign, as most women are opting for professional care during childbirth. Home births are less common in Osun, at 12.3%, compared to states like Ondo and Ogun, where home deliveries are more frequent. However, the data still suggests a need for continuous efforts to ensure that more women choose healthcare facilities for delivery, reducing potential risks associated with home births. Overall, Osun is making progress in improving access to safer childbirth options, though there’s room to encourage even more hospital-based deliveries.",
+        "Most babies in Osun State are born in healthcare facilities, which is a good sign that more women are choosing professional care for childbirth. About 54% of deliveries happen in public hospitals and 32.1% in private clinics. Home births, which come with more risks, are less common here—only 12.3%—a much lower figure than in nearby states like Ondo and Ogun, where home deliveries are more frequent. <br><br> Despite this progress, there’s still work to be done to ensure even more women opt for hospital-based deliveries, reducing the risks that come with giving birth at home.",
       location: {
         center: [4.529, 7.796],
         zoom: 11.8,
@@ -355,7 +356,7 @@ var config = {
       alignment: "left",
       image: "assets/chart1.png",
       description:
-        "In Osun State, there are both promising signs and areas that need improvement when it comes to child health. While the neonatal mortality rate shows room for improvement, the state performs better in post-neonatal care, with fewer deaths compared to many other states.<br><br> However, infant and under-5 mortality rates remain a concern, with Osun facing higher numbers than neighboring Lagos and Oyo. These mixed results indicate that while some progress has been made, more efforts are needed to ensure that more children in Osun survive and thrive, especially in their critical early years.",
+        "When it comes to child health, Osun is showing some promise but also faces real challenges. The neonatal mortality rate still needs improvement, but the state does better in post-neonatal care, with fewer deaths compared to many others. <br><br>Even so, infant and under-5 mortality rates remain a serious concern. Osun has higher numbers than neighboring Lagos and Oyo, reminding us that while progress is being made, more efforts are needed to ensure more children in the state not only survive but thrive, especially during those crucial early years.",
       location: {
         center: [4.529, 7.796],
         zoom: 11.8,
@@ -392,6 +393,34 @@ var config = {
       image: "assets/renovation.jpg",
       description:
         "Under the administration of Governor Ademola Adeleke, the Osun State government has embarked on a significant renovation <span>&#128679;</span> and upgrade of 345 primary healthcare centres across the state. This project is part of a broader effort to revitalize the healthcare system, with the Osun Primary Healthcare Renovation Committee actively monitoring progress at various facilities, including Atile, Odeyinka, and Edun-Abon Primary Health Centres. <br><br> <span style = 'color:#f6aa28;'>&#9679;</span> <span> Primary Health Centre </span>",
+      location: {
+        center: [3.8, 7.555],
+        zoom: 9.21,
+        pitch: 1,
+        bearing: 0,
+      },
+      mapAnimation: "easeTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "Osun Phc",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: "Osun Phc",
+          opacity: 0,
+        },
+      ],
+    },
+    {
+      id: "chapter6b-id",
+      alignment: "left",
+      image: "assets/renovation.jpg",
+      description:
+        "As these improvements unfold, it is crucial that the government remains committed to addressing staffing shortages and ensuring that healthcare access becomes a reality for every resident. The future of healthcare in Osun depends on the collaboration between the government, healthcare workers, and community members to build a healthier, more vibrant state for generations to come.<br><br> <span style = 'color:#f6aa28;'>&#9679;</span> <span> Primary Health Centre </span>",
       location: {
         center: [3.8, 7.555],
         zoom: 9.21,
