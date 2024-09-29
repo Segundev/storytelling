@@ -12,7 +12,7 @@ var config = {
       id: "title-id",
       alignment: "left",
       description:
-        '<span style="font-size:24px;"><strong>Osun State</strong> shines and thrive for better health care <span>&#127973;</span> for all. </span><br><br>Mapping Osun State <strong style="color:#f6aa28;">Primary Health Centers</strong> | By <a target = "_blank" href = "https://connorrothschild.github.io/">Jayeola Gbenga</a><br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
+        '<span style="font-size:24px;">Healthcare Access in <strong>Osun State</strong>: Progress Amidst Challenges <span>&#127973;</span>. </span><br><br>Mapping Osun State <strong style="color:#f6aa28;">Primary Health Centers</strong> | By <a target = "_blank" href = "https://www.linkedin.com/in/jayeola-gbenga/">Jayeola Gbenga</a><br><span style = "color:darkgrey;">(Scroll &#x2913; to explore)</span>',
       location: {
         center: [3.8, 7.555],
         zoom: 8.21,
@@ -63,7 +63,7 @@ var config = {
       image: "assets/chapter1.jpg",
       title: "Oyediran Residents without access to Primary Health Care",
       description:
-        "For over eight years, residents of Oyediran village in Osun State have been without access to healthcare, as their once-operational primary health centre has been abandoned. <br> <br> As reported by Noah Aderoju<span>&#128240;</span>, this has left villagers, especially pregnant women, facing dangerous, long-distance journeys on poor roads to reach medical services in nearby towns. The situation worsens during the rainy season <span>&#127783;</span>, with residents trapped by flooding, further highlighting the critical need for a functional health facility.<br><br> <a href='https://checkmyphc.org/blog/phc-in-oyediran-village-aground-for-over-8-years-as-residents-bemoan'>Source: Orodata Science Report</a>",
+        'For more than eight years, residents of Oyediran village in Osun State have lived without access to healthcare, as the once-operational primary health centre was abandoned. "We were overjoyed when the centre first opened," recalls Mrs. Funmilayo Segun, a local resident, "but that happiness quickly faded when the staff disappeared, and the place was left to decay.<br><br> <a href="https://checkmyphc.org/blog/phc-in-oyediran-village-aground-for-over-8-years-as-residents-bemoan">Source: Orodata Science Report</a>',
       location: {
         center: [4.075, 7.679],
         zoom: 10.95,
@@ -82,6 +82,70 @@ var config = {
       onChapterExit: [
         // {
         //   layer: "Iwo LGA Boundary",
+        //   opacity: 0,
+        // },
+      ],
+    },
+    {
+      id: "chapter1b-id",
+      alignment: "left",
+      image: "assets/chapter1b.jpg",
+      description:
+        "The centre’s closure has forced villagers, especially pregnant women, to make long and dangerous trips on bad roads to seek care in distant towns. Community leader Mr. Taofeek Amao explained that the health centre was abandoned due to a shortage of medical staff, with state health officials citing the remote location and past security concerns as major reasons for the withdrawal.<br><br> <span style = 'color:#f6aa28;'>&#9679;</span> <span> Primary Health Centre </span>",
+      location: {
+        center: [4.22, 7.65],
+        zoom: 13.5,
+        pitch: 10,
+        bearing: 0,
+      },
+      mapAnimation: "easeTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "Iwo LGA Boundary",
+          opacity: 1,
+        },
+        {
+          layer: "Iwo Phc",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        // {
+        //   layer: "Iwo Phc",
+        //   opacity: 0,
+        // },
+      ],
+    },
+    {
+      id: "chapter1c-id",
+      alignment: "left",
+      // image: "assets/chapter1b.jpg",
+      description:
+        "As reported by Noah Aderoju, who conducted an on-site investigation, the situation worsens during the rainy season when floods trap residents, forcing them to face dangerous journeys to reach medical care. This ongoing neglect underscores the urgent need for improved healthcare solutions in rural areas like Oyediran.<br><br> <span style = 'color:#f6aa28;'>&#9679;</span> <span> Primary Health Centre </span>",
+      location: {
+        center: [4.22, 7.65],
+        zoom: 13.5,
+        pitch: 10,
+        bearing: 0,
+      },
+      mapAnimation: "easeTo",
+      rotateAnimation: false,
+      callback: "",
+      onChapterEnter: [
+        {
+          layer: "Iwo LGA Boundary",
+          opacity: 1,
+        },
+        {
+          layer: "Iwo Phc",
+          opacity: 1,
+        },
+      ],
+      onChapterExit: [
+        // {
+        //   layer: "Iwo Phc",
         //   opacity: 0,
         // },
       ],
